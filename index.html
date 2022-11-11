@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Painting gellery </title>
 </head>
 <body>
@@ -17,7 +18,15 @@
 
     </header>
     <main class="container">
-        <section class="card">
+        <section class="card" >
+            <img src="images/painting10.jfif" alt="">
+            <div>
+                <h3>Acrylic Painting </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et odit exercitationem harum corrupti iste ab cumque sed molestias consequatur beatae voluptatem enim dolorem molestiae, facere aut, pariatur laborum amet repellendus?  </p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+        </section>
+        <section class="card" data-aos="fade-left" >
             <img src="images/painting1.jfif" alt="">
             <div>
                 <h3>Acrylic Painting one</h3>
@@ -25,7 +34,7 @@
                 <a href="#" class="btn">Buy Now</a>
             </div>
         </section>
-        <section class="card">
+        <section class="card" data-aos="fade-right">
             <img src="images/painting2.jfif" alt="">
             <div>
                 <h3>Acrylic Painting two</h3>
@@ -33,7 +42,7 @@
                 <a href="#" class="btn">Buy Now</a>
             </div>
         </section>
-        <section class="card">
+        <section class="card" data-aos="fade-left">
             <img src="images/painting3.jfif" alt="">
             <div>
                 <h3>Acrylic Painting three </h3>
@@ -41,7 +50,7 @@
                 <a href="#" class="btn">Buy Now</a>
             </div>
         </section>
-        <section class="card">
+        <section class="card" data-aos="fade-right">
             <img src="images/painting4.jfif" alt="">
             <div>
                 <h3>Acrylic Painting four</h3>
@@ -75,5 +84,13 @@
         </section>
     </main>
     
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 400,
+        duration: 1000
+
+      });
+    </script>
 </body>
 </html>
